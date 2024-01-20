@@ -1,0 +1,482 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+  margin:0;
+
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background: rgb(233, 229, 219);
+  line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Space Mono', monospace;
+  ;
+}
+
+.home-container {
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;/*
+  height: 100vh;
+  min-height: 100vh;
+  overflow: auto;
+
+
+
+  background-color: #e9e5db; */
+}
+.home-intro {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+    .home-voyage-mastering {
+      flex: 50%;
+      color: #e9e5db;
+      display: flex;
+      font-size: 65px;
+      /* min-width: 300px; */
+      align-items: center;
+      font-family: "Space Mono";
+      padding: 10px;
+      overflow-wrap: anywhere;
+      justify-content: center;
+      background-color: #303030;
+    }
+    .home-passion-for-lofi {
+      flex: 50%;
+      display: flex;
+      font-size: 40px;
+      /* min-width: 300px; */
+      align-self: center;
+      text-align: left;
+      align-items: flex-start;
+      font-family: "Space Mono";
+      flex-direction: column;
+      justify-content: center;
+      padding: 50px;
+    }
+button {
+      font-size: 1.3rem;
+      text-transform: lowercase;
+      border: none;
+      color: #9b9b9b;
+      width: 5rem;
+      padding: 0.75rem;
+      border-radius: 12px;
+      background: #e6e6e6;
+      box-shadow: 7px 7px 15px #cdcdcd, -7px -7px 15px #ffffff;
+      cursor: pointer;
+      transition: all ease-in-out 0.3s;
+    }
+    button:disabled {
+      color: #c9c9c9;
+      box-shadow: inset 7px 7px 15px #cdcdcd, inset -7px -7px 15px #ffffff;
+      transition: all ease-in-out 0.3s;
+    }
+    button:disabled:hover {
+      color: #c9c9c9;
+      box-shadow: inset 5px 5px 15px #cdcdcd, inset -5px -5px 15px #ffffff;
+    }
+    button:hover {
+      box-shadow: 4px 4px 15px #cdcdcd, -4px -4px 15px #ffffff;
+    }
+
+/* .player__scaled {
+  transform: scale(0.8);
+} */
+
+/*
+.player__scaled img {
+  width: 80%;
+} */
+
+/* .player__scaled p {
+  font-size: 80%;
+}
+
+.player__scaled button {
+  transform: scale(0.1);
+} */
+
+.players_flexcontainer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* border: 1px dashed black; */
+  width: 100%;
+}
+    .player_flexitem-1,
+    .player_flexitem-2,
+    .player_flexitem-3 {
+      margin: 2rem;
+      border-radius: 50px;
+      background: rgb(233, 229, 219);
+      box-shadow: 20px 20px 37px #cdcdcd, -20px -20px 37px #ffffff;
+      padding: 4vh 5.5vw 4.5vh 5.5vw;
+      width: 550px;
+     }
+      .custom-image {
+        width: 362px; /* Adjust the width as needed */
+        height: auto; /* Maintain the aspect ratio */
+        border-radius: 10px;
+        margin: 0 auto; /* Center the image horizontally */
+        margin-bottom: 2rem;
+      }
+      .track_title {
+        font-size:1.7rem;
+        text-align:center;
+        margin-bottom: 2rem;
+        color: #000000;
+        }
+      
+.ab__controls {
+  display: grid;
+  align-content: center;
+  align-items: top;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  justify-items: center;
+  width: 100%;
+}
+    .a__button {
+      width: 10rem;
+      font-size:1rem;
+      height: 5rem;
+      border-radius: 12px 0 0 12px;
+      padding: 0;
+      margin: 0;
+    }
+    .b__button {
+      width: 10rem;
+      font-size:1rem;
+      height: 5rem;
+      border-radius: 0;
+      margin:0;
+    }
+    .c__button {
+      width: 10rem;
+      font-size:1rem;
+      height: 5rem;
+      border-radius: 0 12px 12px 0;
+    }
+.scaling {
+  transform: scale(0.9)
+}
+.play__button {
+  justify-self: self-end;
+}
+    .stop__button {
+      width: 5rem;
+      color: #966f6f;
+      justify-self: self-start;
+    }
+    .stop__button:disabled {
+      color: #966f6fd3;
+    }
+    .play__stop__controls {
+      margin-top: 1rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      grid-gap: 1rem;
+    }
+
+.progress__container {
+  display: inline-flex;
+  background: #a8a8a8;
+  height: 1rem;
+  width: 100%;
+  margin-bottom: 2.4rem;
+  border-radius: 10px;
+  border-radius: 12px;
+  background: #e6e6e6;
+  box-shadow: inset 7px 7px 15px #cdcdcd, inset -7px -7px 15px #ffffff;
+  cursor: pointer;
+  align-self: center;
+  overflow: hidden; /* Ensure the progress bar stays within the rounded container */
+    }
+    .progress__bar {
+      background: linear-gradient(360deg, #000000, #858585fa);
+      border-radius: 12px;
+      transition: all ease-in-out 0.03s;
+    }
+
+.masterprocess_title {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 2rem;
+}
+    .masterprocess_text {
+      text-align: center;
+      font-size: 12px;
+    }
+
+.home-techloud {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1700px;
+  /* border: 1px dashed black; */
+  width: 100%;
+
+}
+    .home-tech {
+      flex: 0 0 auto;
+      width: 50%;
+      /* border: 1px dashed black; */
+      display: flex;
+      align-items: baseline;
+      justify-content: flex-start;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 2rem;
+      overflow-x: hidden;
+    }
+        .home-tech-title {
+          font-size: 65px;
+          font-family: "Space Mono";
+          overflow-wrap:normal;
+
+        }
+        .home-tech-text {
+          font-size: 20px;
+          font-family: "Space Mono";
+          /* padding-top: 4rem;
+          padding-left: 4rem;
+          padding-right: 4rem; */
+          text-align: justify;
+        }
+    .home-loud {
+      flex: 0 0 auto;
+      width: 50%;
+      /* border: 1px dashed black; */
+      display: flex;
+      align-items: baseline;
+      justify-content: flex-start;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 2rem;
+    }
+        .home-loud-title {
+          font-size: 65px;
+          font-family: "Space Mono";
+        }
+        .home-loud-text {
+          font-size: 20px;
+          font-family: "Space Mono";
+          /* padding-top: 4rem;
+          padding-left: 4rem;
+          padding-right: 4rem; */
+          text-align: justify;
+        }
+.home-promo-box {
+  flex: 0 0 auto;
+  width: 100%;
+  min-height: 10vh;
+  margin-bottom: 8rem;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px dashed black; */
+}
+    .home-promo-text {
+      font-size: 30px;
+      font-family: "Space Mono";
+      max-width: 1200px;
+      margin-left: 2rem; 
+      margin-right: 2rem;   
+      border-radius: 50px;
+      background: rgb(233, 229, 219);
+      box-shadow: 20px 20px 37px #cdcdcd, -20px -20px 37px #ffffff;
+      padding: 2.4rem;
+      align-self: center;
+    }
+
+.home-aboutme {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 1700px;
+  gap:1rem;
+  padding: 2rem;
+  /* border: 1px dashed black; */
+
+}
+    .home-aboutme-title {
+      font-size: 60px;
+      text-align: center;
+    }
+    .home-aboutme-text {
+      font-size:35px;
+    }
+    .chillhop {
+      background: -webkit-linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .home-logos {
+      display:flex;
+      gap:1.4rem;
+    }
+        .abbeyroadlogo {
+          max-width: 70px;
+        }
+        .chillhoplogo {
+          max-width: 70px;
+          border-radius: 3px;;
+        }
+
+.home-ratescontact {
+  flex: 0 0 auto;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* border: 1px dashed black; */
+
+}
+  .rates,
+  .contact {
+    flex:50%;
+    display:flex;
+    flex-direction: column;
+  }
+  .rates {
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+  }
+      .rates-title {
+        font-size:65px;
+        text-align: center;
+        padding:2rem;
+        /* border: 1px dashed black; */
+      }
+      .rates-body {
+        /* border: 1px dashed black; */
+        font-size: 40px;
+        padding:2rem;
+
+      }
+      .rates-deliverables {
+        /* border: 1px dashed black; */
+        font-size: 25px;
+        padding:2rem;
+
+      }
+  .contact {
+    background-color: #303030;
+    color: #e9e5db;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    overflow: hidden;
+  }
+      .contact-title {
+        font-size:65px;
+        padding:2rem;
+        /* border: 1px dashed white; */
+        text-align: center;
+      }
+      .contact-email {
+        /* border: 1px dashed white; */
+        font-size:40px;
+        font-style: italic;
+        padding:2rem;
+      }
+
+
+
+@media (max-width: 940px) {
+  .home-tech,
+  .home-loud {
+    width: 100%;
+  }
+}
+@media (max-width: 940px) {
+  .home-voyage-mastering,
+  .contact-title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 940px) {
+  .home-loud-title,
+  .home-tech-title,
+  .rates-title {
+    font-size: 45px;
+  }
+}
+@media (max-width: 940px) {
+  .home-aboutme-text,
+  .rates-body,
+  .rates-deliverables,
+  .contact-email {
+    font-size: 25px;
+  }
+}
+@media (max-width: 940px) {
+  .player__scaled {
+    transform: scale(0.8);
+  }
+}
+@media (max-width: 940px) {
+  .home-passion-for-lofi {
+    font-size: 30px;
+  }
+}
+@media (max-width: 940px) {
+  .home-promo-text {
+    font-size: 25px;
+  }
+}
