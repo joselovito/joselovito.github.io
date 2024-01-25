@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    <title>master.voyäge</title>
+    <link href="https://fonts.cdnfonts.com/css/04b30" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+    <div class="all-container">
+        <div class="intro-container">
+          <span class="intro-left">master.voyage</span>
+          <span class="intro-right">lofi artist, professional mastering engineer.<br>listen to demos below.</span>
+        </div>
+        <div class="players-container">
+            <!-- Player 1 -->
+            <div class="player-subcontainer">
+                <div class="player" id="player1">
+                    <div class="artwork"><img src="assets/art_linedisconnected.png"></div>
+                    <div class="track-title"><p>- line disconnected -</p></div>
+                    <div class="btn-container">
+                        <button class="btn" id="mix" data-version="1_mix">un-mastered</button>
+                        <button class="btn" id="mstlow" data-version="2_mstlow">mastered <br>(mix level)</button>
+                        <button class="btn" id="mst" data-version="3_mst">mastered <br>(full level)</button>
+                    </div>
+                    <button class="stop-btn"><i class="fa-solid fa-stop"></i></button>
+                    <audio id="audio1"></audio>
+                </div>
+                <div class='arrow'><i class="fa-solid fa-angles-down"></i></div>
+                <span class="comments">in this track, one of the main things to preserve and enhance was the analog feel, which was done with a combination of tube compression, passive EQ, and harmonic saturation, which also helped the tonal balance. I then added some subtle stereo widening combined with making the subs (below 68Hz) mono, and some DXP multi-band compression, which only compresses below a certain threshold. the final touch was driving the clipped and limiter a bit to inch out some more volume (always preserving transients!!).</span>
+                <span class="processes"><u>processing</u>:
+                    <br>- high saturation, pentode/triode harmonics
+                    <br>- tube compression
+                    <br>- stereo widening, sub fq mono-making
+                    <br>- DXP compression
+                    <br>- passive EQ
+                    <br>- soft clipper, limiter</span>
+            </div>
+            <!-- PLAYER 2 -->
+            <div class="player-subcontainer">
+                <div class="player" id="player2">
+                <div class="artwork"><img src="assets/art_passingthroughmedellin.jpg"></div>
+                    <div class="track-title"><p>- passing thru medellín -</p></div>
+                    <div class="btn-container">
+                        <button class="btn" id="mix" data-version="1_mix">un-mastered</button>
+                        <button class="btn" id="mstlow" data-version="2_mstlow">mastered <br>(mix level)</button>
+                        <button class="btn" id="mst" data-version="3_mst">mastered <br>(full level)</button>
+                    </div>
+                    <button class="stop-btn"><i class="fa-solid fa-stop"></i></button>
+                    
+                <audio id="audio2"></audio>
+                </div>
+                <div class='arrow'><i class="fa-solid fa-angles-down"></i></div>
+                <span class="comments">this track had an audibly large crest factor (19.1dB!), and so the main task was to reduce this in order to bring up everything apart from the kick and snare, while keeping their transients intact. the final crest factor was 15.8dB, achieved with a combination of pentode harmonics and saturation, master tape compression, parallel multi-band compression and limiting. I also added some tube EQ to bring up the trumpets a touch, some low fq saturation to enhance the 808, and some soft harmonic excitement.</span>
+                <span class="processes"><u>processing</u>:
+                    <br>- tube EQ
+                    <br>- saturation & harmonic enhancer
+                    <br>- master tape compression
+                    <br>- paralell multi-band compression
+                    <br>- soft clipper, limiter </span>
+            </div>
+          <!-- PLAYER 3 -->
+            <div class="player-subcontainer">
+                <div class="player" id="player3">
+                    <div class="artwork"><img src="assets/art_themomentiknew.jpeg"></div>
+                        <div class="track-title"><p>- the moment i knew -</p></div>
+                        <div class="btn-container">
+                            <button class="btn" id="mix" data-version="1_mix">un-mastered</button>
+                            <button class="btn" id="mstlow" data-version="2_mstlow">mastered <br>(mix level)</button>
+                            <button class="btn" id="mst" data-version="3_mst">mastered <br>(full level)</button>
+                        </div>
+                        <button class="stop-btn"><i class="fa-solid fa-stop"></i></button>
+                        <audio id="audio3"></audio>
+                </div>
+                <div class='arrow'><i class="fa-solid fa-angles-down"></i></div>
+                <span class="comments">'the moment i knew' was already relatively loud and had a healthy crest factor. the main challenge was to control the low end bass and kick, which were quite loud. with a combination of low-end mono-making, 15ips tape machine emulation, and multi-band compression, a thick and tight low-end was made possible (might be inaudible on small speakers, but try on headphones or monitors). once that was achieved, the rest of the mastering was only some very gentle tone balancing, and safeguard limiting.</span>
+                <span class="processes"><u>processing</u>:
+                    <br>- sub fq mono-making
+                    <br>- equalization
+                    <br>- soft pentode and harmonic saturation
+                    <br>- low multi-band compression
+                    <br>- 15ips tape machine
+                    <br>- limiter </span>
+            </div>
+        </div>
+         <div class="tech-loud-container">
+            <div class="tech-container">
+                <span class="tech-title">technical <br>considerations</span>
+                <span class="tech-text">i included three versions of each track: the mix, the master, but also the master at the level of mix. this is very important to be able to tell if the improvements we hear are not only due to a higher volume.
+                    <br><br>my process is unique to each track, and sometimes all it needs is a final check on loudness before being ready for release! however, it is important that an <strong>independent set of ears</strong> check the dynamic range, tonal balance, and loudness of your track before release.</span>
+                </span>
+            </div>
+            <div class="loud-container">
+                <span class="loud-title">loudness</span>
+                <span class="loud-text">confused about loudness? there is a lot of misinformation online about loudness targets in mastering and streaming platforms. some will tell you -14 LUFS, other -16LUFS, some talk about -1dbTP…
+                    <br><br>the (sad?) truth is that in the professional mastering world, engineers don't care about the LUFS value. what matters is <strong>dynamic range</strong>, which is the relationship between the peak loudness (e.g. the sound of a kick) and the average loudness (e.g. the continuous piano harmony) - this value is also called <strong>the crest factor</strong>. mastering engineers will treat a track in order to achieve a competitive crest factor while preserving transients and dynamic range. check for yourselves on Spotify!</span>
+            </div>
+        </div> 
+        <div class="promo-box">
+            <span class="promo-text">with over <strong>1.5M streams</strong> on streaming platforms, and <strong>4.8M views</strong> on TikTok, my experience could <strong>help your track to where you want it to be</strong>.</span>
+        </div>
+        <div class="home-aboutme">
+            <span class="home-aboutme-title">
+              about me
+            </span>
+            <span class="home-aboutme-text">
+              my name is rayan telleria, and i am a mastering engineer with working experience at abbey road studios and angel studios, london.
+              <br><br>
+              but most of all, i have been a <strong>lofi lover and producer</strong> for years, member of the <span class="chillhop">chillhop community</span>, and my tracks have amassed hundreds of thousands of streams on streaming platforms.
+              <br><br>
+              with voyäge mastering, i want to provide a high-quality, affordable alternative for lofi producers to polish their compositions before publishing them - while also discovering new music!
+            </span>
+            <div class="home-logos">
+              <img class="abbeyroadlogo" src="/assets/logo_abbeyroad.png"><img class="chillhoplogo" src="/assets/logo_chillhop.jpg"></div>
+          </div>
+          <div class="home-ratescontact">
+            <div class="rates">
+              <span class="rates-title">rates</span>
+              <span class="rates-body">master from stereo mix ........ <strong>45$</strong></span>
+              <span class="rates-deliverables"><span style="text-decoration: underline;">deliverables:</span><br><br>- &nbspa stereo .wav and .mp3 file at source sample rate (highest possible)
+              <br>- &nbspa professionally downsampled and dithered stereo .wav 44.1kHz 24bit for streaming services.</span>
+            </div>
+            <div class="contact">
+              <span class="contact-title">contact me:</span>
+              <span class="contact-email"><span style="font-style: italic;">contact@voyagemastering</span><br>discord: v.oyage</span>
+            </div>
+          </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,501 @@
+
+body {
+  background-image: url('assets/bg_main_evening.png');
+  /* background-image: url('assets/bg_main.png'); */
+  /* background-size: clamp(1440px,100vw,100000px);  */
+  background-size: 2560px; 
+
+  background-position-x: center;
+  background-position-y: -800px;
+  background-repeat: no-repeat;/*
+  background-repeat: repeat; */
+  /* background-size:contain; */
+  /* background-color: #c0bed3; */
+  background-color: #beaec4;
+  font-family: 'Space Mono', monospace;
+  margin: 0;                      
+  /* overflow-x: hidden; */
+  color: #303030;
+}
+
+.btn, .stop-btn {
+  margin: 0;
+  font: inherit;
+  border: none;
+}
+
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* border: 1px dashed black; */
+  height: 400px;
+  justify-content: top;
+  align-items: center;
+  gap: 20px;
+  /* background-image: url('assets/bg_3.png');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+
+
+}
+    .intro-left,
+    .intro-right {
+      box-sizing: border-box;
+      /* border: 1px dashed red; */
+      /* overflow-wrap: break-word; */
+    }
+        .intro-left{
+          /* font-size: clamp(39px, 5vw, 1000px); */
+          margin-top: 100px;
+          font-size: 70px;
+          font-weight: 700;
+          text-align: center;
+          text-shadow: 3px 3px 40px rgb(246, 206, 190);
+          /* padding: 10px; */
+          /* background: #f9e8d798; */
+          /* box-shadow: 20px 20px 37px #cbcbcb, -20px -20px 37px #ffffff; */
+          /* border-radius: 50px; */
+          /* font-family: '04b', sans-serif; */
+
+
+          /* font-family: '04b', sans-serif; */
+          /* margin: 10px; */
+        }
+        .intro-right{
+          font-size: 20px;
+          text-align: center;
+          margin-left: 2rem; 
+          margin-right: 2rem;   
+          text-shadow: 3px 3px 40px rgb(246, 206, 190);
+
+          /* border-radius: 50px;
+          background: #ffd7b4;
+          box-shadow: 20px 20px 37px #f0c6c67a, -20px -20px 37px #ddbfbfa9;
+          padding: 2rem; */
+          align-self: center;
+
+        }
+          .intro-right br {
+              display: block;
+              margin: 10px 0;
+              content: " ";
+          }
+
+
+.players-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-content: center; */
+  /* gap: 6vw; */
+  gap: 70px;
+  margin-top: 450px;
+  /* border: 1px dashed #e3e2e2; */
+}
+  .player-subcontainer {
+    /* border: 1px dashed black; */
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: top; */
+  }
+    .player {
+      border-radius: 50px;
+      /* border: 1px dashed black; */
+      width: 290px;
+      background: #f9e8d798;
+      color: #303030;
+      box-shadow: 20px 20px 37px #cbcbcb, -20px -20px 37px #ffffff;
+      padding: 30px 40px 30px 40px;
+      /* padding: 4vh 5.5vw 4.5vh 5.5vw; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+        .artwork img {
+          width: 240px;
+          border-radius: 12px;
+        }
+        .track-title {
+          text-align: center;
+          font-size: 18px;
+        }
+        .btn-container {
+          display: flex;
+          border-radius: 12px;
+          box-shadow: 7px 7px 15px #cdcdcd, -7px -7px 15px #ffffff;
+        }
+            .btn {
+              width: 110px;
+              height: 60px;
+              font-size: 13px;
+              border-radius: 12px;
+              color: rgb(34, 34, 34);
+              background-color: #e6e6e6;
+              transition: all ease-in-out 0.3s;
+              cursor: pointer;
+              box-shadow: 7px 7px 15px #cdcdcd, -7px -7px 15px #ffffff;
+
+              /* padding: 10px; */
+            }
+                #mix {
+                  border-radius: 12px 0 0 12px;
+                }
+                #mstlow {
+                  border-radius: 0;
+                }
+                #mst {
+                  border-radius: 0px 12px 12px 0px;
+                }
+        .stop-btn {
+          border-radius: 8px;
+          margin-top: 15px;
+          width: 40px;
+          font-size: 18px;
+          color: #c99292;
+          background-color: #ececec;
+          transition: all ease-in-out 0.3s;
+          cursor: pointer;
+          box-shadow: 7px 7px 15px #cdcdcd, -7px -7px 15px #ffffff;
+        }
+            .stop-btn.active,
+            .btn.active {
+              transition: all ease-in-out 0.3s;
+              box-shadow: inset 7px 7px 15px #cdcdcd, inset -7px -7px 15px #ffffff;
+            }
+                .stop-btn.active {
+                  color: #c3afaf;
+                }
+                .btn.active {
+                  color: #30303081;
+                }
+      .arrow {
+        /* border: 1px dashed black; */
+        margin-bottom: 20px;
+        margin-top: 0;
+      }
+      .comments,
+      .processes {
+        font-size: 15px;
+        /* border: 1px dashed black; */
+      }
+      .comments {
+        text-align: justify;
+      }
+      .processes {
+        margin-top: 20px;
+      }
+
+
+
+.player {
+  scale: 0.78;
+}
+
+.tech-loud-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* min-height: 80vh; */
+  margin-top: 50px;
+  /* border: 1px dashed rgb(198, 52, 52); */
+  justify-content: center;
+  gap: 20px;
+}
+    .tech-container,
+    .loud-container {
+      margin-top: 50px;
+      box-sizing: border-box;
+      min-width: 320px;
+      max-width: 500px;
+      /* border: 1px dashed black; */
+      display: flex;
+      flex-direction: column;
+    }
+        .tech-title,
+        .loud-title {
+                /* border: 1px dashed rgb(198, 52, 52); */
+                /* height: 100px; */
+                /* font-size: clamp(48px, 3vw, 1800px); */
+                font-size: 33px;
+                font-weight: 700;
+                height: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin-bottom: 20px;
+                /* font-family: '04b', sans-serif; */
+
+              }
+        .tech-text,
+        .loud-text {
+          /* border: 1px dashed rgb(198, 52, 52); */
+          /* font-size: 130%; */
+          text-align: justify;
+          /* margin-left: 1vw; */
+          padding: 0px 10px 0px 10px;
+        }
+
+
+.promo-box {
+  flex: 0 0 auto;
+  width: 100%;
+  min-height: 10vh;
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px dashed rgb(198, 52, 52); */
+}
+    .promo-text {
+      /* font-size: clamp(20px, 3vw, 25px); */
+      font-family: "Space Mono";
+      font-size: 20px;
+      max-width: 800px;
+      text-align: center;
+      margin-left: 2rem; 
+      margin-right: 2rem;   
+      border-radius: 50px;
+      background: #f9e8d798;
+      color: #303030;
+      box-shadow: 20px 20px 37px #cbcbcb, -20px -20px 37px #ffffff;
+      padding: 2.4rem;
+      align-self: center;
+    }
+
+
+.home-aboutme {
+  /* min-height: 70vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-self: center;
+  min-width: 320px;
+  max-width: 500px;
+  margin: auto;
+  margin-top: 70px;
+  gap:1rem;
+  /* padding: 2rem; */
+  /* border: 1px dashed rgb(198, 52, 52); */
+
+  /* border: 1px dashed black; */
+
+}
+    .home-aboutme-title {
+      font-size: 33px;
+      font-weight: 700;
+      text-align: center;
+    }
+    .home-aboutme-text {
+      /* font-size: 130%; */
+      /* text-align: center; */
+      /* max-width: 1000px; */
+      padding: 0px 10px 0px 10px;
+      align-self: center;
+    }
+    .chillhop {
+      background: -webkit-linear-gradient(rgb(188, 12, 241), rgb(212, 4, 4));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .home-logos {
+      display:flex;
+      gap:1.4rem;
+    }
+        .abbeyroadlogo {
+          max-width: 70px;
+        }
+        .chillhoplogo {
+          max-width: 70px;
+          border-radius: 3px;;
+        }
+
+.home-ratescontact {
+  flex: 0 0 auto;
+  margin-top: 70px;
+  /* width: 100%; */
+  /* min-height: 100vh; */
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* border: 1px dashed rgb(198, 52, 52); */
+
+  /* border: 1px dashed black; */
+
+}
+  .rates,
+  .contact {
+    flex:50%;
+    display:flex;
+    flex-direction: column;
+  }
+  .rates {
+    justify-content: space-around;
+    align-items: center;
+    min-width: 320px;
+    max-width: 1000px;
+    /* border: 1px dashed black; */
+    margin: auto;
+  }
+      .rates-title {
+        font-size: 33px;
+        font-weight: 700;
+        text-align: center;
+        padding:2rem;
+        /* border: 1px dashed black; */
+      }
+      .rates-body {
+        /* border: 1px dashed black; */
+        /* font-size: clamp(130%, 2vw, 1800px); */
+        /* padding:2rem; */
+        padding: 0px 10px 0px 10px;
+        font-size: 20px;
+      }
+      .rates-deliverables {
+        /* border: 1px dashed black; */
+        /* font-size: clamp(130%, 1vw, 1800px); */
+        margin-top: 50px;
+        padding: 0px 10px 0px 10px;
+
+      }
+  .contact {
+    margin-top: 40px;
+    background-color: #303030;
+    color: #e9e5db;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    overflow: hidden;
+  }
+      .contact-title {
+        font-size: 33px;
+        font-weight: 700;
+        /* padding:2rem; */
+        /* border: 1px dashed white; */
+        text-align: center;
+      }
+      .contact-email {
+        /* border: 1px dashed white; */
+        /* font-size: clamp(130%, 2vw, 1800px); */
+        text-align: center;
+        /* font-style: italic; */
+        /* padding:2rem; */
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 0px) and (max-width: 570px) {
+  .intro-left {
+    font-size: clamp(37px,10vw,1000px);
+  }
+  .intro-right {
+    font-size: 17px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 0px) and (max-width: 380px) {
+  /* .btn {
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+    width: clamp(50px,30%,100px);
+    text-wrap: wrap;
+    font-size: 3vw;
+  } */
+  /* .tech-title,
+  .loud-title {
+    font-size: 35px;
+  } */
+}
+
+
+@media (min-width: 0px) and (max-width: 400px) {
+  /* .intro-left {
+    font-size: 10vw;
+  } */
+}
+
+
+@media (min-width: 0px) and (max-width: 635px) {
+  /* Most phones fall in here - iPhone, Galaxy, Pixel, etc */
+  /* .intro-right,
+  .intro-left,
+  .tech-container,
+  .loud-container {
+    width: 100%;
+  } */
+  /* .intro-container {
+    min-height: 100vh;
+  } */
+
+}
+
+@media (min-width: 480px) and (max-width: 768px) { 
+  /* Phablets and Tablets - iPad, Galaxy Note, Pixel Slate, Fire */
+  /* .intro-left{
+    font-size: clamp(40px, 4vw, 1800px);
+    overflow-wrap: break-word;
+    word-break: break-all;
+  }
+  .tech-container,
+  .loud-container {
+    width: 100%;
+  } */
+}
+
+@media (min-width: 768px) and (max-width: 980px) { 
+  /* Small desktop, large tablet - Macbooks, sub 12" ultrabooks */
+  /* .tech-container,
+  .loud-container {
+    width: 100%;
+  } */
+
+}
+
+@media (min-width: 980px) and (max-width: 1200px) { 
+  /* Medium screen desktop (up to about 24") and laptops (13" laptops) */
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+  /* Large screen desktop (27"), laptops (15+") */
+}
+
+@media (min-width: 1600px) { 
+  /* Very large screen, 4K desktop + small TVs */
+}
